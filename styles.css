@@ -78,6 +78,11 @@ transform: scale(1.05); /* Enlarge on hover */
 
 /* End of mystuff */
 
+.avatar-image {
+    margin-bottom: 5px; /* Adjust as needed */
+}
+
+
 .image-container {
   text-align: center;
   width: 100%;
