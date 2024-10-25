@@ -34,13 +34,16 @@ gap: 15px; /* Space between images */
 }
 
 .portfolio-image {
-width: calc(50% - 15px); /* Two images per row with gap considered */
-transition: transform 0.3s; /* Smooth transition for hover effect */
-cursor: pointer; /* Indicate it's interactive */
+    width: 100%; /* Make the image take the full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 200px; /* Set a max height */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+    cursor: pointer; /* Indicate it's interactive */
 }
 
 .portfolio-image:hover {
-transform: scale(1.1); /* Enlarge on hover */
+transform: scale(1.05); /* Enlarge on hover */
 }
 
 
@@ -59,7 +62,7 @@ transform: scale(1.1); /* Enlarge on hover */
 }
 
 .image-item {
-    text-align: center; /* Center the text below the images */
+    text-align: center; /* Center the text and images */
     flex: 1 1 calc(33.33% - 10px); /* Allow responsive widths */
     margin: 5px; /* Margin around each item */
 }
