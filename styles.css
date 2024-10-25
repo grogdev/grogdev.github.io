@@ -145,3 +145,25 @@ transform: scale(1.05); /* Enlarge on hover */
   color: rgba(255, 204, 217) !important;
   background-color: rgba(255, 255, 179, 0.3) !important;
 }
+
+
+
+.imageGallery1 {
+
+  overflow: hidden; margin: 30px -20px;
+
+}
+.imageGallery1 > a {
+
+  float: left; width: 33.3333%; padding: 1px; box-sizing: border-box; position: relative;
+
+}
+
+.imageGallery1 > a:first-child { left: -1px; }
+.imageGallery1 > a:last-child { right: -1px; }
+
+.imageGallery1 > a > img {
+
+  display: block; width: 100%;
+
+}
