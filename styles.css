@@ -17,6 +17,14 @@ body {
 /* Then style the iframe to fit in the container div with full height and width */
 
 /* My stuff I'm adding*/
+.avatar-image {
+  margin-top: 50;
+  margin-top: 20; /* Adjust as needed */
+}
+
+
+
+
 .responsive-iframe {
 position: absolute;
 top: 0;
@@ -36,7 +44,7 @@ gap: 15px; /* Space between images */
 .portfolio-image {
     width: 100%; /* Make the image take the full width of the container */
     height: auto; /* Maintain aspect ratio */
-    max-height: 200px; /* Set a max height to ensure uniformity */
+
     object-fit: cover; /* Ensure the image covers the area without distortion */
     transition: transform 0.3s; /* Smooth transition for hover effect */
     cursor: pointer; /* Indicate it's interactive */
@@ -63,9 +71,9 @@ transform: scale(1.05); /* Enlarge on hover */
 
 .image-item {
     text-align: center; /* Center the text and images */
-    flex: 1 1 calc(33.33% - 10px); /* Allow responsive widths */
+    flex: 1 1 calc(33.333% - 10px); /* Allow responsive widths */
     margin: 5px; /* Margin around each item */
-    max-width: 200px; /* Set a maximum width for uniformity */
+    max-width: 300px; /* Set a maximum width for uniformity */
 }
 
 .image-caption {
@@ -77,10 +85,6 @@ transform: scale(1.05); /* Enlarge on hover */
 
 
 /* End of mystuff */
-
-.avatar-image {
-    margin-bottom: 5px; /* Adjust as needed */
-}
 
 
 .image-container {
