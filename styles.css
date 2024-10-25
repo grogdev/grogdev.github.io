@@ -18,8 +18,7 @@ body {
 
 /* My stuff I'm adding*/
 .avatar-image {
-  margin-top: 50;
-  margin-top: 20; /* Adjust as needed */
+  margin-top: 10px;
 }
 
 
@@ -48,6 +47,8 @@ gap: 15px; /* Space between images */
     object-fit: cover; /* Ensure the image covers the area without distortion */
     transition: transform 0.3s; /* Smooth transition for hover effect */
     cursor: pointer; /* Indicate it's interactive */
+
+    
 }
 
 .portfolio-image:hover {
