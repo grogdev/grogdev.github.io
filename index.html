@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
+
+
+
+
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Syne"/>
     <link rel="stylesheet" href="lightbox/dist/css/lightbox.css"/>
+    <link rel="stylesheet" href="dist/simpleLightbox.css">
+    
+
+  
     <link rel="stylesheet" href="styles.css" />
 
     <title>Grogsite グログ</title>
@@ -39,42 +49,54 @@
           <a href="https://grogdev.itch.io" class="w3-button w3-hover-pink w3-large w3-round-xlarge w3-yellow link" target="_blank">itch.io</a>
         </div>
       </div>
-        
+       
       <section class="portfolio">
         <div class="image-container">
           <h3 class="w3-text-white">Portfolio</h3>
         </div>
+        
+        <div class="gallery">
         <div class="image-grid">
+
+      
+
           <div class="image-item">
-              <a href="assets/portfolio/4cZJhvb.gif" data-lightbox="portfolio" data-title="Portfolio Item 1">
+              <a href="assets/portfolio/4cZJhvb.gif"  data-title="Portfolio Item 1">
                   <img src="assets/portfolio/4cZJhvb.gif" alt="Portfolio Item 1" class="portfolio-image" />
               </a>
               <span class="image-caption w3-text-white">Fiendtower Gameplay</span>
           </div>
           <div class="image-item">
-              <a href="assets/portfolio/Kq2A0fk0Bp.gif" data-lightbox="portfolio" data-title="Portfolio Item 2">
+              <a href="assets/portfolio/Kq2A0fk0Bp.gif"  data-title="Portfolio Item 2">
                   <img src="assets/portfolio/Kq2A0fk0Bp.gif" alt="Portfolio Item 2" class="portfolio-image" />
               </a>
               <span class="image-caption w3-text-white">Brew Breaker Agnes Gameplay</span>
           </div>
           <div class="image-item">
-              <a href="assets/portfolio/OMFHXxr.gif" data-lightbox="portfolio" data-title="Portfolio Item 3">
+              <a href="assets/portfolio/OMFHXxr.gif" " data-title="Portfolio Item 3">
                   <img src="assets/portfolio/OMFHXxr.gif" alt="Portfolio Item 3" class="portfolio-image" />
               </a>
               <span class="image-caption w3-text-white">Dash & ATLAS Gameplay</span>
           </div>
           <div class="image-item">
-              <a href="assets/portfolio/asset_slash2.gif" data-lightbox="portfolio" data-title="Portfolio Item 5">
+              <a href="assets/portfolio/asset_slash2.gif"  data-title="Portfolio Item 5">
                   <img src="assets/portfolio/asset_slash2.gif" alt="Portfolio Item 5" class="portfolio-image" />
               </a>
               <span class="image-caption w3-text-white">Top Down Asset Pack</span>
           </div>
+          
           <div class="image-item">
-              <a href="assets/portfolio/iconodemake.png" data-lightbox="portfolio" data-title="Portfolio Item 6">
+              <a href="assets/portfolio/iconodemake.png"  data-title="Portfolio Item 6">
                   <img src="assets/portfolio/iconodemake.png" alt="Portfolio Item 6" class="portfolio-image" />
               </a>
               <span class="image-caption w3-text-white">Fan Demake of Iconoclasts</span>
           </div>
+      </div>
+    </div>
+
+      
+      <div class="video-container">
+        <iframe src="https://player.vimeo.com/video/1023003748?title=false&byline=false" width="640" height="360" frameborder="0" allowfullscreen></iframe>
       </div>
     </section>
 
@@ -91,7 +113,13 @@
     </div>
 
 
+    <script src="dist/simpleLightbox.js"></script>
 
-  <script src="lightbox/dist/js/lightbox-plus-jquery.js"></script>
+  <script>
+
+    new SimpleLightbox({elements: '.gallery a'});
+</script>
+
+
   </body>
 </html>
