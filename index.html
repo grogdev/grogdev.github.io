@@ -24,6 +24,8 @@
       }
 
       /* Then style the iframe to fit in the container div with full height and width */
+
+      /* My stuff I'm adding*/
     .responsive-iframe {
     position: absolute;
     top: 0;
@@ -33,6 +35,26 @@
     width: 100%;
     height: 100%;
     }
+    .image-grid {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to new rows */
+    justify-content: center; /* Center the images */
+    gap: 15px; /* Space between images */
+}
+
+.portfolio-image {
+    width: calc(50% - 15px); /* Two images per row with gap considered */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+    cursor: pointer; /* Indicate it's interactive */
+}
+
+.portfolio-image:hover {
+    transform: scale(1.1); /* Enlarge on hover */
+}
+
+
+
+    /* End of mystuff */
 
       .image-container {
         text-align: center;
@@ -126,14 +148,30 @@
 
         
 
+      <section class="portfolio">
+        <h3>Portfolio</h3>
+        <div class="video-container">
+          <iframe src="https://player.vimeo.com/video/1023003748?title=false&byline=false" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="image-grid">
+            <img src="assets/portfolio/4cZJhvb.gif" alt="Portfolio Item 1" class="portfolio-image" />
+            <img src="assets/portfolio/Kq2A0fk0Bp.gif" alt="Portfolio Item 2" class="portfolio-image" />
+            <img src="assets/portfolio/OMFHXxr.gif" alt="Portfolio Item 3" class="portfolio-image" />
+            <img src="assets/portfolio/rungun.gif" alt="Portfolio Item 4" class="portfolio-image" />
+            <img src="assets/portfolio/asset_slash2.gif" alt="Portfolio Item 5" class="portfolio-image" />
+            <img src="assets/portfolio/iconodemake.png" alt="Portfolio Item 6" class="portfolio-image" />
+        </div>
+    </section>
+
+
+
+
         <div class="image-container">
         <div class="w3-text-white">
             <h3 class="w3-text-white">Portfolio</h3>
           </div>
             
-          <div class="video-container">
-          <iframe src="https://player.vimeo.com/video/1023003748?title=false&byline=false" width="640" height="360" frameborder="0" allowfullscreen></iframe>
-        </div>
+       
    
               <img
               src="assets/portfolio/4cZJhvb.gif"
