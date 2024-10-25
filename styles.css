@@ -148,21 +148,21 @@ transform: scale(1.05); /* Enlarge on hover */
 
 
 
-.imageGallery1 {
+.gallery {
 
   overflow: hidden; margin: 30px -20px;
 
 }
-.imageGallery1 > a {
+.gallery > a {
 
   float: left; width: 33.3333%; padding: 1px; box-sizing: border-box; position: relative;
 
 }
 
-.imageGallery1 > a:first-child { left: -1px; }
-.imageGallery1 > a:last-child { right: -1px; }
+.gallery > a:first-child { left: -1px; }
+.gallery > a:last-child { right: -1px; }
 
-.imageGallery1 > a > img {
+.gallery > a > img {
 
   display: block; width: 100%;
 
