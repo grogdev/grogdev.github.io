@@ -3,6 +3,7 @@ body {
   height: 200vh; /* Full height of the viewport */
   background: linear-gradient(to bottom, #222034,black); /* Gradient background */
   font-family: "Syne", sans-serif;
+  overflow-x: hidden;
 }
 
 .container {
@@ -13,30 +14,29 @@ body {
   margin-left: auto;
 }
 
-/* Then style the iframe to fit in the container div with full height and width */
-
-/* My stuff I'm adding*/
 .avatar-image {
   margin-top: 30px;
 }
 
 
-
-
-.responsive-iframe {
-position: absolute;
-top: 0;
-left: 0;
-bottom: 0; 
-right: 0;
-width: 100%;
-height: 100%;
-}
-.image-grid {
+/* PORTFOLIO GRID*/
+.portfolio-grid{
 display: flex;
 flex-wrap: wrap; /* Allow wrapping to new rows */
 justify-content: center; /* Center the images */
 gap: 15px; /* Space between images */
+}
+
+.portfolio-container {
+  flex: 1 1 calc(33.333% - 15px); /* Responsive width, adjusted for gap */
+  max-width: calc(33.333% - 15px); /* Ensure a max width for uniformity */
+  text-align: center; /* Center the text and images */
+}
+
+.image-caption {
+    display: block; /* Make it a block element */
+    margin-top: 5px; /* Space between image and caption */
+    color: rgba(255, 255, 255, 0.87); /* Match text color */
 }
 
 .portfolio-image {
@@ -69,22 +69,6 @@ transform: scale(1.05); /* Enlarge on hover */
 }
 }
 
-.image-item {
-    text-align: center; /* Center the text and images */
-    flex: 1 1 calc(33.333% - 10px); /* Allow responsive widths */
-    margin: 5px; /* Margin around each item */
-    max-width: 300px; /* Set a maximum width for uniformity */
-}
-
-.image-caption {
-    display: block; /* Make it a block element */
-    margin-top: 5px; /* Space between image and caption */
-    color: rgba(255, 255, 255, 0.87); /* Match text color */
-}
-
-
-
-/* End of mystuff */
 
 
 .image-container {
@@ -92,13 +76,6 @@ transform: scale(1.05); /* Enlarge on hover */
   width: 100%;
 }
 
-.links-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
 
 
 .video-container {
@@ -200,7 +177,7 @@ transform: scale(1.05); /* Enlarge on hover */
 .links-container {
   display: flex;
   flex-direction: column; /* Stack buttons vertically */
-  gap: 10px; /* Space between buttons */
+  gap: 12px; /* Space between buttons */
 }
 
 .links-container a {
