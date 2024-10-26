@@ -171,51 +171,27 @@ transform: scale(1.05); /* Enlarge on hover */
 .social-icons {
   display: flex;
   justify-content: center; /* Center the icons */
-  gap: 30px; /* Space between icons */
-  margin-top: 15px;
-  margin-bottom: 15px;
+  gap: 20px; /* Space between icons */
+  margin-top: 20px;
 }
 
 .social-icons i {
-  font-size: 30px; /* Set the desired size here */
+  font-size: 25px; /* Set the desired size here */
+  
 }
 
 .social-icons i {
   display: inline-flex; /* Use inline-flex for centering */
   justify-content: center; /* Center the icon within the link */
   align-items: center; /* Center vertically */
-  width: 1.8em; /* Set width for the circle */
-  height: 1.8em; /* Set height for the circle */
+  width: 1.7em; /* Set width for the circle */
+  height: 1.7em; /* Set height for the circle */
   border-radius: 50%; /* Make the background circular */
   background-color: #65635a; /* Background color (adjust as needed) */
   text-decoration: none; /* Remove underline */
   transition: background-color 0.3s; /* Smooth transition for hover effect */
 }
 
-.social-icons a:hover {
+.social-icons i:hover {
   background-color: #fe3a3ae5; /* Change background color on hover (optional) */
-}
-
-@media (max-width: 600px) {
-  .social-icons a {
-      width: 15vw; /* Adjust size for small screens */
-      height: 15vw; /* Adjust size for small screens */
-      gap: 2vw; /* Keep gap consistent for medium screens */
-    }
-  }
-
-  .social-icons i {
-      font-size: 4vw; /* Adjust icon size for small screens */
-  }
-
-
-@media (min-width: 601px) and (max-width: 1200px) {
-  .social-icons a {
-      width: 10vw; /* Adjust size for medium screens */
-      height: 10vw; /* Adjust size for medium screens */
-  }
-
-  .social-icons i {
-      font-size: 5vw; /* Adjust icon size for medium screens */
-  }
 }
