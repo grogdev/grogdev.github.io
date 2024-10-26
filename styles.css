@@ -215,10 +215,13 @@ transform: scale(1.05); /* Enlarge on hover */
 .links-container a .fab {
   position: absolute; /* Position icon absolutely */
   left: 0px; /* Space from the left */
-  font-size: 1em; /* Adjust icon size as needed */
+  font-size: 1.4em; /* Adjust icon size as needed */
   color: inherit; /* Make icon color inherit from text */
 }
 
 .links-container a span {
-  margin-left: 20px; /* Space for the icon */
+  margin-left: 15px; /* Space for the icon */
 }
+
+
+.grog-pink,.grog-hover-pink:hover{color:#000000!important;background-color:#d77bba!important}
