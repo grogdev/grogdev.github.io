@@ -1,8 +1,7 @@
 body {
-  background-image: url(https://grogdev.github.io/assets/sky.png); /* The image used for background*/
-  background-repeat: repeat; /* Do not repeat the image */
-  background-position: center; /* Center the image */
-  background-size: auto; /* Resize the background image to cover the entire container */
+  margin: 0; /* Remove default margin */
+  height: 200vh; /* Full height of the viewport */
+  background: linear-gradient(to bottom, #222034,black); /* Gradient background */
   font-family: "Syne", sans-serif;
 }
 
@@ -195,4 +194,28 @@ transform: scale(1.05); /* Enlarge on hover */
 
 .social-icons a:hover {
   background-color: #fe3a3ae5; /* Change background color on hover (optional) */
+}
+
+@media (max-width: 600px) {
+  .social-icons a {
+      width: 15vw; /* Adjust size for small screens */
+      height: 15vw; /* Adjust size for small screens */
+      gap: 2vw; /* Keep gap consistent for medium screens */
+    }
+  }
+
+  .social-icons i {
+      font-size: 4vw; /* Adjust icon size for small screens */
+  }
+
+
+@media (min-width: 601px) and (max-width: 1200px) {
+  .social-icons a {
+      width: 10vw; /* Adjust size for medium screens */
+      height: 10vw; /* Adjust size for medium screens */
+  }
+
+  .social-icons i {
+      font-size: 5vw; /* Adjust icon size for medium screens */
+  }
 }
