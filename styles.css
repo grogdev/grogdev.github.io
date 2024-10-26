@@ -195,3 +195,30 @@ transform: scale(1.05); /* Enlarge on hover */
 .social-icons i:hover {
   background-color: #fe3a3ae5; /* Change background color on hover (optional) */
 }
+
+
+.links-container {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  gap: 10px; /* Space between buttons */
+}
+
+.links-container a {
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center icon vertically */
+  justify-content: center; /* Center the text horizontally */
+  padding: 0x; /* Add some padding for better click area */
+  text-decoration: none; /* Remove underline */
+  position: relative; /* Allow absolute positioning of the icon */
+}
+
+.links-container a .fab {
+  position: absolute; /* Position icon absolutely */
+  left: 0px; /* Space from the left */
+  font-size: 1em; /* Adjust icon size as needed */
+  color: inherit; /* Make icon color inherit from text */
+}
+
+.links-container a span {
+  margin-left: 20px; /* Space for the icon */
+}
