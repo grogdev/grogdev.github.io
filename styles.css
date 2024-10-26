@@ -33,6 +33,13 @@ gap: 15px; /* Space between images */
   text-align: center; /* Center the text and images */
 }
 
+.portfolio-container-full {
+  flex: 1 1 100%; /* Take up the full width */
+  max-width: 100%; /* Ensure it spans the entire row */
+  text-align: center; /* Center the text and images */
+  margin-bottom: 15px; /* Add space below the container if needed */
+}
+
 .image-caption {
     display: block; /* Make it a block element */
     margin-top: 5px; /* Space between image and caption */
