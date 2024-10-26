@@ -28,8 +28,8 @@ gap: 15px; /* Space between images */
 }
 
 .portfolio-container {
-  flex: 1 1 calc(33.333% - 15px); /* Responsive width, adjusted for gap */
-  max-width: calc(33.333% - 15px); /* Ensure a max width for uniformity */
+  flex: 1 1 calc(50% - 15px); /* Responsive width, adjusted for gap */
+  max-width: calc(50% - 15px); /* Ensure a max width for uniformity */
   text-align: center; /* Center the text and images */
 }
 
@@ -43,6 +43,7 @@ gap: 15px; /* Space between images */
 .image-caption {
     display: block; /* Make it a block element */
     margin-top: 5px; /* Space between image and caption */
+    text-align:center
     color: rgba(255, 255, 255, 0.87); /* Match text color */
 }
 
