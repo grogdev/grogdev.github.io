@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Syne"/>
     <link rel="stylesheet" href="lightbox/dist/css/lightbox.css"/>
     <link rel="stylesheet" href="dist/simpleLightbox.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   
     <link rel="stylesheet" href="styles.css" />
@@ -38,6 +38,25 @@
         <div class="w3-text-white">
           <h3 class="w3-text-white"><strong>Hi, I'm Grog o/</strong></h3>
           <h5 class="w3-text-white">Game Developer ☆ Pixel Artist ☆ Streamer </h5>
+
+
+        <div class="social-icons">
+
+          <a href="https://bluesky.social/yourusername" target="_blank">
+              <i class="fab fa-bluesky" style="font-size: 60px;"></i>
+          </a>
+          <a href="https://www.twitch.tv/yourusername" target="_blank">
+              <i class="fa-brands fa-itch-io" style="font-size: 60px;"></i>
+          </a>
+          <a href="https://www.twitch.tv/yourusername" target="_blank">
+            <i class="fa-brands fa-twitch" style="font-size: 60px;"></i>
+        </a>
+          <a href="https://discord.gg/yourserver" target="_blank">
+              <i class="fab fa-discord" style="font-size: 60px;"></i>
+          </a>
+      </div>
+
+
 
         </div>
 
@@ -114,11 +133,13 @@
 
 
     <script src="dist/simpleLightbox.js"></script>
+    <script src="https://kit.fontawesome.com/b31f3c0b81.js" crossorigin="anonymous"></script>
+    <script>
+      new SimpleLightbox({elements: '.gallery a'});
+    </script>
 
-  <script>
 
-    new SimpleLightbox({elements: '.gallery a'});
-</script>
+
 
 
   </body>
