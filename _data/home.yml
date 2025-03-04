@@ -8,6 +8,11 @@ navbar_entries:
   - title: website
     url: https://www.abhinav.co
 
+test_entries:
+- title: TEst 1
+  desc: this is a test
+
+
 project_entries:
   - title: Project 1
     url: overview-post
