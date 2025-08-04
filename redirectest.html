@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Twitch OAuth Token</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 2em; background: #f4f4f4; }
+        .container { max-width: 600px; margin: auto; background: white; padding: 2em; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1);}
+        h1 { color: #9146FF; }
+        pre { background: #eee; padding: 1em; border-radius: 4px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Authentication Successful</h1>
+        <p>Please copy the following access token and paste it into your game to complete the login process:</p>
+        <pre id="token">Loading token...</pre>
+        <p>If the token is not shown, please try copying the full URL and contacting support.</p>
+    </div>
+
+    <script>
+        // Parse the token from the URL fragment
+        function getAccessToken() {
+            const hash = window.location.hash.substr(1);
+            const params = new URLSearchParams(hash);
+            return params.get('access_token');
+        }
+
+        const token = getAccessToken();
+        const tokenElem = document.getElementById('token');
+
+        if (token) {
+            tokenElem.textContent = token;
+        } else {
+            tokenElem.textContent = 'No access token found.';
+        }
+    </script>
+</body>
+</html>
