@@ -211,3 +211,7 @@ transform: scale(1.05); /* Enlarge on hover */
 
 
 .grog-pink,.grog-hover-pink:hover{color:#000000!important;background-color:#d77bba!important}
+
+.grog-pink:hover {
+  background-color: #e69bcf !important; /* your hover colour */
+}
